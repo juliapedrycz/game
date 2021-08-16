@@ -1,1 +1,1 @@
-# game
+Simple game written in HTML, JS and CSS.

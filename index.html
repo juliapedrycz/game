@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {  background-image: url("bck.jpg");
+  	background-repeat: repeat;}
+
+.main-window {
+	background: #788877;
+	width: 1000px;
+	height: 600px;
+	left: calc(50% - 500px);
+	top: calc(50% - 300px);
+	position: absolute;
+	border-radius: 15px;}
+
+.on-body {
+	position: absolute;
+  	top: 10px !important;
+	left: 710px !important;
+	transform: scale(0.7) !important;
+	display: flex;}
+
+.cloth {
+	position: absolute;
+  	transform: scale(0.5);}
+
+.hidden {
+	display:none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="main-window">
+<img src="body.png" class="on-body">
+
+<img src="cloth10.png" class="cloth" onclick="put_on_off(this)" style="top:-130px;left:550px;">
+<img src="cloth11.png" class="cloth" onclick="put_on_off(this)" style="top:-130px;left:440px;">
+<img src="cloth12.png" class="cloth" onclick="put_on_off(this)" style="top:70px;left:550px;">
+
+<img src="cloth4.png" class="cloth" onclick="put_on_off(this)" style="top: -450px;left: 200px;">
+<img src="cloth15.png" class="cloth" onclick="put_on_off(this)" style="top: -450px;left: 400px;">
+
+<img src="cloth13.png" class="cloth" onclick="put_on_off(this)" style="top:-110px;left:350px;">
+<img src="cloth14.png" class="cloth" onclick="put_on_off(this)" style="top:-110px;left:230px;">
+
+<img src="cloth1.png" class="cloth" onclick="put_on_off(this)" style="top: 210px;left: -90px;">
+<img src="cloth2.png" class="cloth" onclick="put_on_off(this)" style="top: 220px;left: 40px;">
+<img src="cloth3.png" class="cloth" onclick="put_on_off(this)" style="top: 210px;left: 150px;">
+
+<img src="cloth5.png" class="cloth" onclick="put_on_off(this)" style="top: 270px;left: 270px;">
+<img src="cloth6.png" class="cloth" onclick="put_on_off(this)" style="top: 270px;left: 360px;">
+<img src="cloth7.png" class="cloth" onclick="put_on_off(this)" style="top: 280px;left: 450px;">
+
+<img src="cloth8.png" class="cloth" onclick="put_on_off(this)" style="top:-100px;left:-90px;">
+<img src="cloth9.png" class="cloth" onclick="put_on_off(this)" style="top:-100px;left:70px;">
+
+</div>
+
+<script>
+
+function put_on_off(cloth){
+	if(cloth.classList.contains("on-body")){
+		cloth.classList.remove("on-body");
+	}
+	else {
+		cloth.classList.add("on-body");
+	}
+}
+
+
+</script>
+
+
+</body>
+</html> 
